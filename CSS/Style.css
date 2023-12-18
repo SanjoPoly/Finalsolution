@@ -14,11 +14,10 @@ body{
 /*---header -----*/
 
 .homefImg{
-    background-image: url(Images/BgPagenew1.jpg);
+    background-image: URL(Images/BgPagenew1.jpg);
     background-position: border-box;
     background-position: center;
-    background-size: cover;
-    background-color: #992121;
+    background-color: #992121 ;
     margin-bottom: -6dvh;
     border-radius: 5dvh;
 }
@@ -26,7 +25,7 @@ body{
 .header{
   display: flex;
   box-shadow: 0 5px 9cqb 0 rgba(168, 69, 69, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color:aliceblue;
+  color: Alice blue;
   background-color: rgb(24, 3, 53);
   border-radius: 25px;
   margin: 1vh;

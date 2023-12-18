@@ -1,0 +1,185 @@
+
+/*--> page basic charactor --*/
+
+body{
+    background-color::#6B240C;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0 0 ;
+}
+
+
+/*----@media query for big screens ----*/
+
+/*---header -----*/
+
+.homefImg{
+    background-image: url(/Images/BgPagenew1.jpg);
+    background-position: border-box;
+    background-position: center;
+    background-size: cover;
+    background-color: #992121;
+    margin-bottom: -6dvh;
+    border-radius: 5dvh;
+}
+
+.header{
+  display: flex;
+  box-shadow: 0 5px 9cqb 0 rgba(168, 69, 69, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color:aliceblue;
+  background-color: rgb(24, 3, 53);
+  border-radius: 25px;
+  margin: 1vh;
+}
+
+.subHeader{
+    display:flex;
+    margin:auto;
+    width:75%;
+    float: right;
+}
+
+
+.Logo{
+    display: flex;
+    width: 50%;
+}
+#navItemb {
+    width: 35px;
+  height: 3px;
+  background-color: rgb(214, 205, 205);
+ }
+
+
+.navbar{
+    width:50%;
+    display: flex;
+    align-items: center;
+}
+
+
+a{
+    margin: auto;
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .navbar{
+        display: grid;
+        justify-content:end;
+        float: right;
+        width: 100%;
+    }
+
+    .Logo{
+        width:80dvh;}
+
+    #navItemsa {
+        display: none;
+    }
+
+    #navItemb{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navItemb{
+        width: 100%;
+        display: inline-block;
+    }  
+    .subHeader{
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+
+    #navItemb{
+        width: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    
+    #logo{
+        width: 120px;
+    }
+
+    #hometag2{
+       width: 20px;
+    }
+}
+/*---------Home Page ------*/
+
+.homePage{
+    width: 80%;
+    height: 80dvh;
+    display:block;
+    margin:0 auto;
+}
+
+.marging1{
+    height: 2dvh;
+}
+
+.homeTag1{
+    background-color: #f4f9ff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.space1{
+    height: 4dvh;
+}
+
+.homeTag{
+    height: 70%; 
+    font-size:xx-large; 
+    display: flex;
+    align-items: center;
+    color: #272b12;
+}
+
+.Circle{
+    background-color: #0f0f0d;
+    border-radius: 50%;
+    height: 11dvh;
+    width: 11dvh;
+    display:flex;
+    position: relative;
+    margin: auto;
+    border:solid #e2e611;
+}
+
+.Circle >img{
+    margin: auto;
+}
+
+@media only screen and (max-width:600px) {
+    
+    .homeTag{
+        font-size:x-large;
+    }
+}
+
+/*-------------- Service options ------*/
+.wwDo{
+    display: flex ;
+    margin: auto;
+    border-radius: 15px;
+    color:aliceblue;    
+}
+
+
+.wwDoContH{
+    height: 100dvh;
+    background: #332a3a;
+    width: 100%;
+    margin: 0%;
+
+}
+

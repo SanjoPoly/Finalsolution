@@ -14,7 +14,7 @@ body{
 /*---header -----*/
 
 .homefImg{
-    background-image: url(Images/BgPagenew1.jpg);
+    background-image: URL("Images/BgPagenew1.jpg");
     background-position: border-box;
     background-position: center;
     background-size: cover;

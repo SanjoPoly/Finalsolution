@@ -225,6 +225,40 @@ a{
 
 /*------------------About Us------------------------*/
 
+.contowner{
+    margin: 5dvh;
+}
+.DeStre{
+    display: flex;
+    justify-content: center;
+}
+
+.contHeight{
+    text-align: center;
+}
+.strength{
+    color: gray;
+    font-size: xx-large;
+    text-align: center; 
+    padding: 20px;
+    width: 80%;
+}
+
+.subcont{
+    text-align:center;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    margin: auto;
+}
+
+.card{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 20px;
+}
+
 
 
 

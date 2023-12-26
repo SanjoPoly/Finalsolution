@@ -362,7 +362,6 @@ a{
           
     }
 }
-
 @media only screen and (max-width:700px) {
 
     .subcont{
@@ -379,9 +378,19 @@ a{
     .subcont{
         display: grid;
         grid-template-columns: auto;
-        row-gap: 4dvh;   
+        row-gap: 2dvh;   
     }
+
+    .strength{
+    font-size: medium;
+    text-align: center; 
+    padding: 20px;
+    width: 80%;
+    }
+
+
 }
+
 
 
 

@@ -397,22 +397,21 @@ a{
 
 /*------------------Contact US ------------------------*/
 
+
 .container{
-    width: 100%;
-    background-color: #b2b42d;
+    padding: 5dvh;
+    background-color: hwb(44 35% 7%);
+    margin: auto;
+
 }
 
 .content{
-    width: 80%;
     margin: auto;
-    padding: 5dvh;
     color: rgb(24, 3, 53);
-   display: flex;
+    display: flex;
+    width: 70%;
 }
 
-.left-side{
-    width: 30%;
-}
 
 .phone  {
     display: flex;
@@ -420,11 +419,10 @@ a{
 }
 
 .email {
-    display: flex;
+    display:flex;
     align-items: center;
 }
-
-    @media (min-width:701px) and (max-width:900px) {
+@media (min-width:701px) and (max-width:900px) {
     .content{
         display: grid;
         grid-template-columns: auto auto;
@@ -443,15 +441,13 @@ a{
 }
 
 
+
 @media only screen and (max-width:700px) {
     .content{
         display: grid;
         row-gap: 1dvh;
         width: 100%;
     }
-
-   
-   
     .side3{
         text-align: justify;
     }
@@ -459,4 +455,5 @@ a{
         text-align: center;
     }    
 }
+
 

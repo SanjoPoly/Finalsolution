@@ -434,13 +434,11 @@ a{
 }
 
 
-
 @media only screen and (max-width:700px) {
     .content{
         display: grid;
-        row-gap: 5dvh;
-        width: 90%;
-        margin:0;
+        row-gap: 1dvh;
+        width: 100%;
     }
 
    

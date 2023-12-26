@@ -1,13 +1,13 @@
-
-/*--> page basic charactor --*/
-
 body{
-    background-color::#6B240C;
+    background-color: #f5f5f5;
     font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
     margin: 0;
     padding: 0 0 ;
 }
 
+.tJustify{
+    text-align: justify;
+}
 
 /*----@media query for big screens ----*/
 
@@ -101,7 +101,7 @@ a{
     }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:700px) {
     
     #logo{
         width: 180px;
@@ -109,6 +109,9 @@ a{
 
     #hometag2{
        width: 20px;
+    }
+    .homefImg{
+        margin-bottom: -4dvh;
     }
 }
 /*---------Home Page ------*/
@@ -160,11 +163,17 @@ a{
     width: 100%;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:700px) {
     
     .homeTag{
         font-size:x-large;
     }
+
+    .Circle{
+    height: 7dvh;
+    width: 7dvh;
+    }
+
 }
 
 /*-------------- Service options ------*/
@@ -180,34 +189,57 @@ a{
 .wwDoContH{
     width: 80%;
     margin: auto;
+    padding: 5dvh;
 }
 
 .grid-container{
     width: 100%;
     display: flex;
-    margin-top: 15dvh;
-    align-items: center;
+    align-items: center; 
     
 }
 
 .item1{
-       margin: 20px;
-
+       width: 20%;
 }
 
 .Item2{
-    width:30%
-    color: #3b0707;
+    width:50%;
+    padding: 2px;
+
+}
+
+.Item3 {
+    width: 50%;
+
 }
 .Item3 > img {
-    width: 100%;
     object-fit: cover; 
 }
 
-.Item3{
-    width: 200%;
-    
+
+
+.Item4{
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
+
+.item5{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.Item6{
+    padding: 10px;
+    width: 50%;
+}
+
+.item7{
+    text-align: right;
+}
+
 .BView{
     width: 100%;
     height: 100px;
@@ -219,8 +251,57 @@ a{
     background-color: aliceblue;
     border-radius: 40px;
     color: #3b0707;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
+}
+
+@media only screen and (max-width:1000px) {
+
+    .wwDoContH{
+        width: 100%;
+    }
+    .grid-container{
+        display: inline-block;
+    }
+   .item1{
+    width:auto;
+   }
+
+    .Item4{
+        visibility:visible;
+        width: 100%;
+        height: 20dvh;
+        text-overflow: clip;
+    }
+    .Item2{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+    .Item3{
+        width: 100%;
+    }
+
+    .Item3 > img {
+        object-fit: cover;
+    }
+    .item1{
+        margin: 1px;
+    }
+    .item7{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+    .Item6{
+        width: auto;
+        
+    }
+    .item5{
+        visibility: visible;
+        height: auto;
+        width: auto;
+    }
 }
 
 /*------------------About Us------------------------*/
@@ -248,6 +329,7 @@ a{
     text-align:center;
     display: grid;
     column-gap: 50px;
+    row-gap: 20px;
     grid-template-columns: auto auto auto;
     width: 80%;
     margin: auto;
@@ -257,6 +339,48 @@ a{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px 20px;
+}
+
+@media (min-width:701px)and (max-width:900px) {
+
+    .subcont{
+        width: 100%;
+    }
+    .DeStre{
+        display: grid;
+        grid-template-columns: auto auto;
+        font-size: large;
+        text-align: center; 
+        padding: 20px;
+    }
+
+    
+
+    .subcont{
+        display: grid;
+        grid-template-columns: auto auto;
+          
+    }
+}
+
+@media only screen and (max-width:700px) {
+
+    .subcont{
+        width: 100%;
+    }
+    .DeStre{
+        display: grid;
+        grid-template-columns: auto auto;
+        font-size: large;
+        text-align: center; 
+        padding: 20px;
+    }
+
+    .subcont{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 4dvh;   
+    }
 }
 
 
@@ -289,5 +413,42 @@ a{
 .email {
     display: flex;
     align-items: center;
+}
+
+    @media (min-width:701px) and (max-width:900px) {
+    .content{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 5dvh;
+        width: 90%;
+    }
+    .center3{
+        grid-column: 1/3;
+    }
+    .side3{
+        text-align: justify;
+    }
+    .input-box, .button, .topic-text{
+        text-align: center;
+    }    
+}
+
+
+
+@media only screen and (max-width:700px) {
+    .content{
+        display: grid;
+        row-gap: 5dvh;
+        width: 90%;
+    }
+
+   
+   
+    .side3{
+        text-align: justify;
+    }
+    .input-box, .button, .topic-text{
+        text-align: center;
+    }    
 }
 

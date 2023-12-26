@@ -371,7 +371,7 @@ a{
     .DeStre{
         display: grid;
         grid-template-columns: auto auto;
-        font-size: large;
+        font-size: medium;
         text-align: center; 
         padding: 20px;
     }

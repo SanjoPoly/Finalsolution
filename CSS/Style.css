@@ -440,6 +440,7 @@ a{
         display: grid;
         row-gap: 5dvh;
         width: 90%;
+        margin:0;
     }
 
    
